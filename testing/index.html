@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Web Components</title>
+	<link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+	<button onclick="changeWelcomeMessage();">Change welcome message</button>
+	<fluidra-counter id="configurator" wellcome-message="Fluidra configurator"></fluidra-counter>
+	
+	<table>
+   <tbody>
+     <tr>
+       <td>A</td>
+       <td>B</td>
+     </tr>
+     <tr class="spaceUnder">
+       <td>C</td>
+       <td>D</td>
+     </tr>
+     <tr class="spaceUnder">
+       <td>E</td>
+       <td>F</td>
+     </tr>
+   </tbody>
+ </table>
+	
+	<script src="polyfills.js"></script>
+   <script src="runtime.js"></script>
+   <script src="main.js"></script>
+   <script src="changeWelcomeMessage.js"></script>
+   
+  </body>
+</html>
