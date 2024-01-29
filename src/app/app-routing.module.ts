@@ -3,6 +3,8 @@ import { Routes } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { FormComponent } from './form/form.component';
+import { LocationStrategy } from '@angular/common';
+import { PathLocationStrategyWithoutState } from './browser-location-strategy/path-location-strategy-no-history';
 
 
 const routes: Routes = [
@@ -18,6 +20,9 @@ const routes: Routes = [
       bindToComponentInputs: true
     })
   ],
-  exports: [ RouterModule ]
+  exports: [ RouterModule ],
+  providers: [
+    { provide: LocationStrategy, useClass: PathLocationStrategyWithoutState }
+  ]
 })
 export class AppRoutingModule {}

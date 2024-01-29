@@ -7,8 +7,6 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { HelloWorldService } from './services/hello-world.service';
-import { LocationStrategy, PathLocationStrategy } from '@angular/common';
-import { PathLocationStrategyWithoutState } from './browser-location-strategy/path-location-strategy-no-history';
 
 @NgModule({
    declarations: [
@@ -21,8 +19,7 @@ import { PathLocationStrategyWithoutState } from './browser-location-strategy/pa
       FormsModule
    ],
    providers: [ 
-      HelloWorldService,
-      { provide: LocationStrategy, useClass: PathLocationStrategyWithoutState }
+      HelloWorldService
     ]
 })
 export class AppModule implements DoBootstrap {
