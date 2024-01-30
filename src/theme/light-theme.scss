@@ -60,38 +60,24 @@ $alert-palette: (
   contrast: $contrast
 );
 
-$error-palette: (
-  50: $error-50,
-  100: $error-100,
-  200: $error-200,
-  300: $error-300,
-  400: $error-400,
-  500: $error-500,
-  600: $error-600,
-  700: $error-700,
-  800: $error-800,
-  900: $error-900,
-  contrast: $contrast
-);
-
-$sky-palette: (
-   50: $sky-50,
-  100: $sky-100,
-  200: $sky-200,
-  300: $sky-300,
-  400: $sky-400,
-  500: $sky-500,
-  600: $sky-600,
-  700: $sky-700,
-  800: $sky-800,
-  900: $sky-900,
+$warn-palette: (
+   50: $warn-50,
+  100: $warn-100,
+  200: $warn-200,
+  300: $warn-300,
+  400: $warn-400,
+  500: $warn-500,
+  600: $warn-600,
+  700: $warn-700,
+  800: $warn-800,
+  900: $warn-900,
   contrast: $contrast
 );
 
 $primary: mat.define-palette($primary-palette, 700);
 $accent: mat.define-palette($accent-palette, 500);
 $alert: mat.define-palette($alert-palette, 800);
-$warn: mat.define-palette($error-palette, 500);
+$warn: mat.define-palette($warn-palette, 500);
 
 $light-theme: mat.define-light-theme((
   color: (

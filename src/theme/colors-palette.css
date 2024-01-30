@@ -32,16 +32,16 @@
     --alert-800: #e3a322;
     --alert-900: #de7c0d;
 
-    --error-50: #f7e6e8;
-    --error-100: #ecc2c5;
-    --error-200: #ce8886;
-    --error-300: #b85d5a;
-    --error-400: #ba3c36;
-    --error-500: #b6281b;
-    --error-600: #a91f1b;
-    --error-700: #991617;
-    --error-800: #8c1011;
-    --error-900: #7d0606;
+    --warn-50: #f7e6e8;
+    --warn-100: #ecc2c5;
+    --warn-200: #ce8886;
+    --warn-300: #b85d5a;
+    --warn-400: #ba3c36;
+    --warn-500: #b6281b;
+    --warn-600: #a91f1b;
+    --warn-700: #991617;
+    --warn-800: #8c1011;
+    --warn-900: #7d0606;
 
     --contrast-50: #000000;
     --contrast-100: #000000;
@@ -53,15 +53,4 @@
     --contrast-700: #ffffff;
     --contrast-800: #ffffff;
     --contrast-900: #ffffff;
-
-    --sky-50: #eaf7fb;
-    --sky-100: #c1ecfa;
-    --sky-200: #94e1fb;
-    --sky-300: #69d5fc;
-    --sky-400: #4acbfe;
-    --sky-500: #33c2ff;
-    --sky-600: #2cb3f1;
-    --sky-700: #239fdd;
-    --sky-800: #1f8eca;
-    --sky-900: #106da9;
 }
