@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { HelloWorldService } from './services/hello-world.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
    declarations: [
@@ -16,7 +18,9 @@ import { HelloWorldService } from './services/hello-world.service';
    imports: [
       BrowserModule,
       AppRoutingModule,
-      FormsModule
+      FormsModule,
+      BrowserAnimationsModule,
+      MatButtonModule
    ],
    providers: [ 
       HelloWorldService

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-form',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent {
+  
+  constructor(private router: Router) { }
 
+   navigateToHome(): void {
+      this.router.navigate(['home']);
+   }
 }
