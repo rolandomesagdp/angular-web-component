@@ -1,6 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Inject, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HelloWorldService } from './services/hello-world.service';
+import { ASSETS_BASE_PATH } from './icon-token';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,9 @@ export class AppComponent implements OnInit {
   @Input() primaryColor: string = "#2290a9";
   private currentColor: string = this.primaryColor;
 
-  constructor(private router: Router, public helloWorldService: HelloWorldService) { }
+  constructor(private router: Router, 
+    public helloWorldService: HelloWorldService,
+    @Inject(ASSETS_BASE_PATH) public logoBasePath: string) { }
 
   ngOnInit(): void {
     this.currentColor = this.primaryColor;

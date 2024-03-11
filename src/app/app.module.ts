@@ -9,6 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { HelloWorldService } from './services/hello-world.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { environment } from 'src/environments/environment';
+import { ASSETS_BASE_PATH } from './icon-token';
 
 @NgModule({
    declarations: [
@@ -23,7 +25,8 @@ import { MatButtonModule } from '@angular/material/button';
       MatButtonModule
    ],
    providers: [ 
-      HelloWorldService
+      HelloWorldService,
+      { provide: ASSETS_BASE_PATH, useValue: environment.basePath}
     ]
 })
 export class AppModule implements DoBootstrap {
